@@ -5,8 +5,12 @@ what、when、why、where、who,how
 
 是什么？什么时候、为什么、什么地方、谁、如何
 
-给定一份文本，生成对文本内容的问题，然后找答案
-分析文本中的实体类型，根据实体类型生成不同类型的问题
+* 给定一份文本，生成对文本内容的问题，然后找答案
+
+分析文本中的实体类型，根据实体类型生成不同类型的问题：
+<image src="./images/getQuestions.png">
+
+通过GPT获得答案：
 <image src="./images/getAnswer.png">
 ## 目的
 

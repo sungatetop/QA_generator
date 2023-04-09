@@ -60,7 +60,7 @@ questions = {
     }
 }
 
-def generate_questions(text):
+def generateQuestions(text):
     gen_questions = []
     words = jiagu.seg(text) # 分词
     pos = jiagu.pos(words) # 词性标注
@@ -93,5 +93,5 @@ def generate_questions(text):
 if __name__ == "__main__":
     # 示例文本
     text = "乔布斯是美国苹果公司的创始人之一,1955年出生于加利福尼亚。"
-    q = generate_questions(text)
+    q = generateQuestions(text)
     print(q)
