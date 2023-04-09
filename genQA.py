@@ -8,7 +8,8 @@ proxy_address = 'http://127.0.0.1:7890'
 os.environ['HTTP_PROXY'] = proxy_address
 os.environ['HTTPS_PROXY'] = proxy_address
 def genAnswer(input_text,question):
-    prompt="请根据以下内容回答问题:'"+input_text+"',问题:"+question+"如果无法回答问，请根据你的知识直接给出回答"
+    prompt="请根据以下内容回答问题:'"+input_text+"',问题:"+question+",如果根据文本无法回答问题，请根据你的知识直接给出回答"
+    prompt_en="please answer queition based on these text:'"+input_text+"',quesition:"+quesition+",if you can't answer based on given text,please give answer by what you know!"
     completions = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
